@@ -5,18 +5,18 @@
 
 ## How It Works
 1. **Sets up environment variables:**
-  - Saves the current working directory.
-  - Sets the path to Chrome and the Chrome profile to use.
-  - Sets the NetSuite Saved Search ID (default: 4149).
+    - Saves the current working directory.
+    - Sets the path to Chrome and the Chrome profile to use.
+    - Sets the NetSuite Saved Search ID (default: 4149).
 2. **Launches Chrome:**
-  - Opens the NetSuite Saved Search export URL in Chrome using the specified profile and search ID.
+    - Opens the NetSuite Saved Search export URL in Chrome using the specified profile and search ID.
 3. **Waits for download:**
-  - Waits 120 seconds to allow the CSV file to download.
+    - Waits 120 seconds to allow the CSV file to download.
 4. **Finds the newest downloaded file:**
-  - Changes directory to the user's Downloads folder.
-  - Finds the most recently downloaded file matching `TimesheetTransactionalData*.*`.
+    - Changes directory to the user's Downloads folder.
+    - Finds the most recently downloaded file matching `TimesheetTransactionalData*.*`.
 5. **Moves the file:**
-  - Moves the newest file to the `Merlin Entertainments Group\LEGO Production Planning and Analysis - Data` folder as `TransactionalData.csv`.
+    - Moves the newest file to the `Merlin Entertainments Group\LEGO Production Planning and Analysis - Data` folder as `TransactionalData.csv`.
 6. **Restores the original working directory.**
 
 ## Setup
@@ -29,9 +29,9 @@
 ## Usage
 1. Double-click `TransactionalData.bat` or run it from the command prompt.
 2. After completion, the latest transactional data will be available at:
-  - `%USERPROFILE%\Merlin Entertainments Group\LEGO Production Planning and Analysis - Data\TransactionalData.csv`
-  - which syncs to
-  - https://attractions.sharepoint.com/sites/LEGOProductionPlanningandAnalysis/Data/TransactionalData.csv
+    - `%USERPROFILE%\Merlin Entertainments Group\LEGO Production Planning and Analysis - Data\TransactionalData.csv`
+    - which syncs to
+    - https://attractions.sharepoint.com/sites/LEGOProductionPlanningandAnalysis/Data/TransactionalData.csv
 
 ## Running Regularly
 It's suggested to add a scheduled task using "Task Scheduler". An [XML file](./TransactionalData.xml) is provided that can be imported into Task Scheduler.
