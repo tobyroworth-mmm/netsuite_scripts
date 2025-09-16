@@ -34,7 +34,7 @@
   - https://attractions.sharepoint.com/sites/LEGOProductionPlanningandAnalysis/Data/TransactionalData.csv
 
 ## Running Regularly
-It's suggested to add a scheduled task using "Task Scheduler". An [XML file](./TransactionalData.xml)! is provided that can be imported into Task Scheduler.
+It's suggested to add a scheduled task using "Task Scheduler". An [XML file](./TransactionalData.xml) is provided that can be imported into Task Scheduler.
 
 _Note that the Task assumes that `TransactionalData.bat` has been placed in the user's profile directory `%USERPROFILE%`._
 
